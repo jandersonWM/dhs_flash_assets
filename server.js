@@ -14,6 +14,7 @@ server.connection({
     port: 9001
 });
 
+
 server.register(require('inert'), (err) => {
     server.route({
         method: 'GET',
