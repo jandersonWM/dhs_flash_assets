@@ -2,6 +2,11 @@ var Finder = require('fs-finder');
 
 exports.endpoints = [
     {
+        /*
+        This logic could be rearranged to take a file extension and figure out the entry folder
+        based on the extension. Fs-finder is pretty powerful and will find any file in the filesystem without being
+        directed to the specific folder.
+         */
         method: 'GET',
         path: '/{path*}',
         handler: function (req, reply) {
